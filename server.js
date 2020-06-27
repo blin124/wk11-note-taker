@@ -15,7 +15,7 @@ app.use(express.static('public'));
 app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // require db.json file and add the contents to a variable.
 
